@@ -645,10 +645,18 @@ p { color: var(--color-text-muted); line-height: 1.75; }
 }
 
 .hero-text h1 .highlight {
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, #2563eb, #06b6d4, #7c3aed, #2563eb);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero-text p {

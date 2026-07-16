@@ -462,55 +462,6 @@ function initServiceCards() {
   });
 }
 
-/* ── Typing Animation on Hero h1 ─────────────────────────────── */
-function initTyping() {
-  const highlight = document.querySelector('#hero h1 .highlight');
-  if (!highlight) return;
-
-  const phrases = [
-    'Innovative Technology',
-    'Intelligent Software',
-    'Secure Systems',
-    'Digital Futures',
-  ];
-
-  let i = 0;
-  let charIdx = 0;
-  let deleting = false;
-  let pausing  = false;
-
-  function tick() {
-    const current = phrases[i];
-    if (pausing) {
-      pausing = false;
-      setTimeout(tick, 1200);
-      return;
-    }
-
-    if (!deleting) {
-      highlight.textContent = current.slice(0, charIdx + 1);
-      charIdx++;
-      if (charIdx === current.length) {
-        pausing  = true;
-        deleting = true;
-        setTimeout(tick, 60);
-        return;
-      }
-    } else {
-      highlight.textContent = current.slice(0, charIdx - 1);
-      charIdx--;
-      if (charIdx === 0) {
-        deleting = false;
-        i = (i + 1) % phrases.length;
-      }
-    }
-
-    setTimeout(tick, deleting ? 40 : 70);
-  }
-
-  // Start after page load
-  setTimeout(tick, 3000);
-}
 
 /* ── Image Lazy Loading ──────────────────────────────────────── */
 function initLazyImages() {
@@ -913,7 +864,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFooterYear();
   initParallax();
   initServiceCards();
-  initTyping();
   initLazyImages();
   initChatbot();
 });
