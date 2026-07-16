@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ChiefinTechSolutions — A Kenyan technology company delivering custom software, cybersecurity, AI, networking, and IT infrastructure solutions for modern organizations." />
+  <meta name="keywords" content="software development Kenya, cybersecurity Nairobi, IT solutions Kenya, custom software, web development, AI solutions, networking Kenya" />
+  <meta property="og:title" content="ChiefinTechSolutions | Technology Solutions for Modern Organizations" />
+  <meta property="og:description" content="We design and build intelligent software, secure IT infrastructure, AI systems, and digital transformation solutions for businesses across Kenya." />
+  <meta property="og:type" content="website" />
+  <title>ChiefinTechSolutions | Technology Solutions for Modern Organizations</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563eb'/><path d='M8 16l6 6 10-12' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+</head>
+<body>
+
+<!-- ── Loading Screen ──────────────────────────────────────── -->
+<div id="loading-screen" role="status" aria-label="Loading ChiefinTechSolutions">
+  <div class="loader-logo">Chiefin<span>Tech</span></div>
+  <div class="loader-bar">
+    <div class="loader-bar-fill"></div>
+  </div>
+  <p style="color:rgba(255,255,255,0.35);font-size:0.8rem;font-family:'Inter',sans-serif;">Initializing solutions…</p>
+</div>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo" aria-label="ChiefinTechSolutions Home">
+      <div class="logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 11L8.5 15.5L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      Chiefin<span>Tech</span>
+    </a>
+
+    <div class="nav-links" role="list">
+      <a href="#about"      class="nav-link" role="listitem">About</a>
+      <a href="#services"   class="nav-link" role="listitem">Services</a>
+      <a href="#why-us"     class="nav-link" role="listitem">Why Us</a>
+      <a href="#portfolio"  class="nav-link" role="listitem">Portfolio</a>
+      <a href="#blog"       class="nav-link" role="listitem">Insights</a>
+      <a href="#contact"    class="nav-link" role="listitem">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button id="search-btn" class="theme-toggle" aria-label="Open search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-primary" id="nav-cta" aria-label="Get a free consultation">Get Started</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile" id="nav-mobile" role="menu">
+  <a href="#about"     class="nav-link" role="menuitem">About</a>
+  <a href="#services"  class="nav-link" role="menuitem">Services</a>
+  <a href="#why-us"    class="nav-link" role="menuitem">Why Us</a>
+  <a href="#portfolio" class="nav-link" role="menuitem">Portfolio</a>
+  <a href="#blog"      class="nav-link" role="menuitem">Insights</a>
+  <a href="#contact"   class="nav-link" role="menuitem">Contact</a>
+  <a href="#contact"   class="btn btn-primary">Get a Free Consultation</a>
+</div>
+
+<!-- ── Hero Section ───────────────────────────────────────── -->
+<section id="hero" aria-label="Hero section">
+  <div class="hero-photo-bg" aria-hidden="true"></div>
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <!-- Particles generated by JS -->
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Kenya-Based Technology Partner
+      </div>
+
+      <h1>Building <span class="highlight">Innovative Technology</span> for a Smarter Tomorrow</h1>
+
+      <p>We design intelligent software, secure IT infrastructure, AI-powered systems, networking solutions, and digital transformation strategies for modern organizations across East Africa and beyond.</p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg btn-ripple" id="hero-cta-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Request a Free Consultation
+        </a>
+        <a href="#services" class="btn btn-outline btn-lg">
+          Explore Our Services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats" aria-label="Company highlights">
+        <div class="hero-stat">
+          <div class="hero-stat-value">6+</div>
+          <div class="hero-stat-label">Service Areas</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">100%</div>
+          <div class="hero-stat-label">Commitment</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">24/7</div>
+          <div class="hero-stat-label">Support</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-orb">
+        <div class="hero-orb-ring"><span class="hero-orb-dot"></span></div>
+        <div class="hero-orb-ring"><span class="hero-orb-dot"></span></div>
+        <div class="hero-orb-ring"><span class="hero-orb-dot"></span></div>
+        <div class="hero-orb-core">
+          <!-- Tech circuit SVG -->
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="28" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+            <circle cx="40" cy="40" r="16" fill="rgba(37,99,235,0.15)" stroke="#06b6d4" stroke-width="1.5"/>
+            <path d="M28 40h24M40 28v24" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="40" cy="40" r="5" fill="#2563eb"/>
+            <circle cx="64" cy="40" r="3" fill="#06b6d4"/>
+            <circle cx="40" cy="16" r="3" fill="#06b6d4"/>
+            <circle cx="16" cy="40" r="3" fill="#06b6d4"/>
+            <circle cx="40" cy="64" r="3" fill="#06b6d4"/>
+          </svg>
+        </div>
+
+        <!-- Floating info cards -->
+        <div class="hero-float-card">
+          <div class="hfc-icon" style="background:rgba(37,99,235,0.2);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="hfc-text">
+            <strong>Security First</strong>
+            <span>Built-in from day one</span>
+          </div>
+        </div>
+
+        <div class="hero-float-card">
+          <div class="hfc-icon" style="background:rgba(6,182,212,0.2);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="hfc-text">
+            <strong>Performance</strong>
+            <span>Scalable architecture</span>
+          </div>
+        </div>
+
+        <div class="hero-float-card">
+          <div class="hfc-icon" style="background:rgba(124,58,237,0.2);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="hfc-text">
+            <strong>Quality Assured</strong>
+            <span>Tested before delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust Strip ────────────────────────────────────────── -->
+<section class="trust-strip" aria-label="Technology Partnerships">
+  <div class="trust-strip-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+      <span>Enterprise Cloud Platforms</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+      <span>Cisco Certified Solutions</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span>OWASP Security Standards</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
+      <span>AI Integrations Provider</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── About Section ───────────────────────────────────────── -->
+<section id="about" class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-photo-frame">
+          <img src="assets/software_dev.png" alt="ChiefinTechSolutions engineering team collaborating in Nairobi workspace" loading="lazy" />
+          <div class="about-photo-badge" aria-hidden="true">
+            <div class="about-photo-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <div class="about-photo-badge-text">
+              <strong>Professional Engineering Team</strong>
+              <span>Kenyan Technology Specialists</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content reveal-right">
+        <div class="section-badge">About ChiefinTechSolutions</div>
+        <h2 id="about-heading">Technology That Solves Real Business Challenges</h2>
+
+        <div class="mv-tabs" role="tablist">
+          <button class="mv-tab active" role="tab" aria-selected="true" data-tab="story">Our Story</button>
+          <button class="mv-tab" role="tab" aria-selected="false" data-tab="mission">Mission</button>
+          <button class="mv-tab" role="tab" aria-selected="false" data-tab="vision">Vision</button>
+        </div>
+
+        <div class="mv-panel active" id="tab-story" role="tabpanel">
+          <p>ChiefinTechSolutions was founded on a simple but powerful belief: that businesses in Kenya and across East Africa deserve access to world-class technology solutions built with the same standards as anywhere in the world.</p>
+          <p>We are a team of passionate engineers, designers, and technology consultants committed to understanding our clients' challenges deeply before writing a single line of code. We approach every project as a long-term partnership — not a one-time transaction.</p>
+        </div>
+
+        <div class="mv-panel" id="tab-mission" role="tabpanel">
+          <p>To empower businesses, institutions, and organizations with innovative, secure, and scalable technology solutions that solve real-world challenges, improve operational efficiency, and enable sustainable growth — delivered with honesty, professionalism, and a deep commitment to quality.</p>
+        </div>
+
+        <div class="mv-panel" id="tab-vision" role="tabpanel">
+          <p>To be the most trusted technology partner for organizations across East Africa and beyond — known for technical excellence, client-centered delivery, honest communication, and building systems that stand the test of time.</p>
+        </div>
+
+        <div class="about-values">
+          <h4>Core Values</h4>
+          <div class="values-grid stagger-children">
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              Innovation
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Integrity
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              Professionalism
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Excellence
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Reliability
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              Security
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              Collaboration
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Client Success
+            </div>
+            <div class="value-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              Continuous Learning
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Services Section ────────────────────────────────────── -->
+<section id="services" class="section" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">What We Do</div>
+      <h2 id="services-heading">Comprehensive Technology Solutions</h2>
+      <p>From custom software to enterprise IT infrastructure, we deliver tailored solutions designed to fit your specific business needs — now and as you grow.</p>
+    </div>
+
+    <div class="services-grid stagger-children">
+
+      <!-- Software Development -->
+      <div class="service-card card-glow reveal">
+        <div class="service-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </div>
+        <div class="service-icon" style="background:rgba(37,99,235,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Software Development</h3>
+        <p>Custom-built web applications, mobile apps, ERP systems, CRM platforms, POS solutions, and business automation software designed for your exact workflows.</p>
+        <div class="service-tags">
+          <span class="service-tag">Web Apps</span>
+          <span class="service-tag">Mobile Apps</span>
+          <span class="service-tag">ERP / CRM</span>
+          <span class="service-tag">POS Systems</span>
+          <span class="service-tag">APIs</span>
+          <span class="service-tag">SaaS</span>
+        </div>
+      </div>
+
+      <!-- Networking -->
+      <div class="service-card card-glow reveal reveal-delay-1">
+        <div class="service-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </div>
+        <div class="service-icon" style="background:rgba(6,182,212,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v4c0 1.1.9 2 2 2h10a2 2 0 002-2V8M12 14v2"/></svg>
+        </div>
+        <h3>Networking Solutions</h3>
+        <p>Enterprise-grade LAN/WAN design, structured cabling, Wi-Fi deployment, VPN setup, server installation, and ongoing network maintenance and optimization.</p>
+        <div class="service-tags">
+          <span class="service-tag">LAN / WAN</span>
+          <span class="service-tag">Wi-Fi</span>
+          <span class="service-tag">VPN</span>
+          <span class="service-tag">Servers</span>
+          <span class="service-tag">Cloud Net</span>
+        </div>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="service-card card-glow reveal reveal-delay-2">
+        <div class="service-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </div>
+        <div class="service-icon" style="background:rgba(239,68,68,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Cybersecurity</h3>
+        <p>Comprehensive security assessments, penetration testing, firewall deployment, endpoint protection, data backup, identity management, and incident response.</p>
+        <div class="service-tags">
+          <span class="service-tag">Pen Testing</span>
+          <span class="service-tag">Firewalls</span>
+          <span class="service-tag">Endpoint</span>
+          <span class="service-tag">SIEM</span>
+          <span class="service-tag">Consulting</span>
+        </div>
+      </div>
+
+      <!-- Hardware & IT Infrastructure -->
+      <div class="service-card card-glow reveal reveal-delay-3">
+        <div class="service-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </div>
+        <div class="service-icon" style="background:rgba(16,185,129,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Hardware &amp; IT Infrastructure</h3>
+        <p>Professional computer setup, office IT deployment, server installation, hardware repairs, maintenance contracts, software installation, and infrastructure upgrades.</p>
+        <div class="service-tags">
+          <span class="service-tag">Setup</span>
+          <span class="service-tag">Servers</span>
+          <span class="service-tag">Repairs</span>
+          <span class="service-tag">Support</span>
+          <span class="service-tag">Upgrades</span>
+        </div>
+      </div>
+
+      <!-- AI & Machine Learning -->
+      <div class="service-card card-glow reveal reveal-delay-4">
+        <div class="service-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </div>
+        <div class="service-icon" style="background:rgba(124,58,237,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3>Artificial Intelligence &amp; ML</h3>
+        <p>AI consulting, business intelligence, predictive analytics, machine learning models, intelligent chatbots, computer vision, NLP, and custom generative AI integrations.</p>
+        <div class="service-tags">
+          <span class="service-tag">AI Consulting</span>
+          <span class="service-tag">Chatbots</span>
+          <span class="service-tag">Analytics</span>
+          <span class="service-tag">NLP</span>
+          <span class="service-tag">Gen AI</span>
+        </div>
+      </div>
+
+      <!-- Robotics & Automation -->
+      <div class="service-card card-glow reveal reveal-delay-5">
+        <div class="service-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </div>
+        <div class="service-icon" style="background:rgba(251,146,60,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M7 8V6a2 2 0 012-2h6a2 2 0 012 2v2"/><circle cx="12" cy="14" r="2"/><line x1="12" y1="4" x2="12" y2="2"/></svg>
+        </div>
+        <h3>Robotics &amp; Automation</h3>
+        <p>Industrial automation consulting, IoT integration, embedded systems, robotic process automation (RPA), smart sensor integration, and end-to-end automation software.</p>
+        <div class="service-tags">
+          <span class="service-tag">IoT</span>
+          <span class="service-tag">RPA</span>
+          <span class="service-tag">Embedded</span>
+          <span class="service-tag">Automation</span>
+          <span class="service-tag">Sensors</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlighted Services Showcase -->
+    <div class="services-showcase-container reveal" style="margin-top: var(--space-4xl); display: flex; flex-direction: column; gap: var(--space-3xl);">
+        
+        <!-- Cybersecurity Showcase -->
+        <div class="service-showcase">
+          <div class="service-showcase-photo">
+            <img src="assets/cybersecurity.png" alt="Cybersecurity operations center" loading="lazy" />
+          </div>
+          <div class="service-showcase-body">
+            <div class="section-badge">Featured Capabilities</div>
+            <h3>Enterprise Cybersecurity</h3>
+            <p>Protect your digital assets, systems, and network infrastructure from evolving cyber threats with our professional security operations.</p>
+            <div class="service-showcase-features">
+              <div class="showcase-feature"><span class="showcase-dot"></span> Security Auditing &amp; Penetration Testing</div>
+              <div class="showcase-feature"><span class="showcase-dot"></span> Next-Gen Firewall &amp; Endpoint Protection</div>
+              <div class="showcase-feature"><span class="showcase-dot"></span> 24/7 Security Incident Response Monitoring</div>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width: fit-content;">Discuss Security Plan</a>
+          </div>
+        </div>
+
+        <!-- AI & ML Showcase -->
+        <div class="service-showcase">
+          <div class="service-showcase-body">
+            <div class="section-badge">Advanced Intelligence</div>
+            <h3>Artificial Intelligence &amp; ML</h3>
+            <p>Build future-ready predictive systems and automation models tailored specifically for your operational workflows.</p>
+            <div class="service-showcase-features">
+              <div class="showcase-feature"><span class="showcase-dot"></span> Custom Generative AI &amp; LLM Integrations</div>
+              <div class="showcase-feature"><span class="showcase-dot"></span> Machine Learning &amp; Business Intelligence Analytics</div>
+              <div class="showcase-feature"><span class="showcase-dot"></span> Workflow Automation &amp; Chatbot Solutions</div>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width: fit-content;">Explore AI Solutions</a>
+          </div>
+          <div class="service-showcase-photo">
+            <img src="assets/ai_lab.png" alt="AI &amp; Machine Learning Laboratory" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Networking Showcase -->
+        <div class="service-showcase">
+          <div class="service-showcase-photo">
+            <img src="assets/networking.png" alt="Networking datacenter deployment" loading="lazy" />
+          </div>
+          <div class="service-showcase-body">
+            <div class="section-badge">Infrastructure</div>
+            <h3>Enterprise Networking</h3>
+            <p>Scalable, reliable network design and physical deployment to keep your branches connected and your operations running with zero downtime.</p>
+            <div class="service-showcase-features">
+              <div class="showcase-feature"><span class="showcase-dot"></span> Office Network Deployment &amp; Cabling</div>
+              <div class="showcase-feature"><span class="showcase-dot"></span> LAN/WAN &amp; Secure Wi-Fi Implementations</div>
+              <div class="showcase-feature"><span class="showcase-dot"></span> Server Configuration &amp; Network Optimization</div>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="width: fit-content;">Plan Your Network</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ── Why Choose Us ───────────────────────────────────────── -->
+<section id="why-us" class="section" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="why-grid">
+      <div class="reveal-left">
+        <div class="section-badge">Why Partner With Us</div>
+        <h2 id="why-heading">The ChiefinTech Difference</h2>
+        <p style="margin-bottom:var(--space-2xl);">We don't just build technology — we build partnerships. Every decision we make puts your business outcomes first.</p>
+
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Client-First Approach</h4>
+              <p>We begin every engagement by deeply understanding your goals, challenges, and constraints before recommending any solution.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Tailored Solutions Only</h4>
+              <p>No one-size-fits-all. Every system we build is designed specifically for your processes, your team, and your growth plans.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Transparent Communication</h4>
+              <p>Regular progress updates, honest timelines, and proactive communication at every stage — no surprises.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Security-First Development</h4>
+              <p>Security isn't an afterthought. Every system is built with security principles from the ground up, following industry best practices.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="why-text">
+              <h4>Long-Term Support</h4>
+              <p>We don't disappear after launch. We offer maintenance contracts, ongoing improvements, and responsive technical support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-visual reveal-right" aria-hidden="true">
+        <div class="why-visual-card">
+          <div class="why-card-inner">
+            <h3 class="why-card-title">Our Engineering Standards</h3>
+            <div class="why-feature-list">
+              <div class="why-feature">
+                <div class="why-feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Clean, documented code architecture
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Rigorous testing before every release
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Scalable infrastructure design
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                OWASP security guidelines adherence
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Version control and CI/CD pipelines
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Performance optimization from day one
+              </div>
+              <div class="why-feature">
+                <div class="why-feature-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Complete project handover &amp; training
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats Band ────────────────────────────────────────── -->
+<section class="stats-band" aria-label="Key Performance Indicators">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">6+</div>
+        <div class="stat-label">Core Capabilities</div>
+        <div class="stat-desc">Tailored business solutions</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Security Focus</div>
+        <div class="stat-desc">Secure-by-design methodologies</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Critical Support</div>
+        <div class="stat-desc">Reliable SLA response contracts</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Technology Domains</div>
+        <div class="stat-desc">React, Node, PyTorch, Cisco &amp; more</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Quote Band ────────────────────────────────────────── -->
+<section class="quote-band" aria-label="Company Philosophy">
+  <div class="quote-band-inner">
+    <div class="quote-mark">“</div>
+    <p class="quote-text">We don't believe in generic templates or outsourced code. We believe in high-quality engineering, transparent communication, and technology that delivers measurable business outcomes.</p>
+    <div class="quote-attribution">ChiefinTechSolutions Engineering Principles</div>
+  </div>
+</section>
+
+<!-- ── Process Section ─────────────────────────────────────── -->
+<section id="process" class="section" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">How We Work</div>
+      <h2 id="process-heading">Our Delivery Process</h2>
+      <p>A structured, transparent process that keeps you informed and in control at every step of your project.</p>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-step" data-step="01">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="18" r="10"/><line x1="18" y1="14" x2="18" y2="18"/><line x1="18" y1="22" x2="18.01" y2="22"/></svg>
+        </div>
+        <h4>Discovery</h4>
+        <p>We learn your business, users, goals, and technical environment</p>
+      </div>
+
+      <div class="process-step" data-step="02">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a6 6 0 01-6 6M18 9a9 9 0 100 18"/></svg>
+        </div>
+        <h4>Consultation</h4>
+        <p>Joint sessions to clarify scope, timeline, and success criteria</p>
+      </div>
+
+      <div class="process-step" data-step="03">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 9"/><rect x="5" y="5" width="26" height="26" rx="3"/></svg>
+        </div>
+        <h4>Planning</h4>
+        <p>Detailed roadmap, architecture design, and resource allocation</p>
+      </div>
+
+      <div class="process-step" data-step="04">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="30" height="22" rx="2"/><path d="M3 9h30M9 9v16"/></svg>
+        </div>
+        <h4>Design</h4>
+        <p>UI/UX prototypes and system architecture reviewed with you</p>
+      </div>
+
+      <div class="process-step" data-step="05">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 22 10 28 4 22"/><polyline points="20 14 26 8 32 14"/><line x1="10" y1="28" x2="10" y2="18"/><line x1="26" y1="8" x2="26" y2="18"/></svg>
+        </div>
+        <h4>Development</h4>
+        <p>Iterative builds with regular progress demos and check-ins</p>
+      </div>
+
+      <div class="process-step" data-step="06">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l6 6 12-12"/></svg>
+        </div>
+        <h4>Testing</h4>
+        <p>Comprehensive QA, security checks, and performance validation</p>
+      </div>
+
+      <div class="process-step" data-step="07">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 26 18 22 24"/><line x1="10" y1="18" x2="26" y2="18"/></svg>
+        </div>
+        <h4>Deployment</h4>
+        <p>Smooth go-live with zero-downtime migration strategies</p>
+      </div>
+
+      <div class="process-step" data-step="08">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h6a4 4 0 014 4v14a3 3 0 01-3-3h-7z"/></svg>
+        </div>
+        <h4>Training</h4>
+        <p>Complete handover, user training, and detailed documentation</p>
+      </div>
+
+      <div class="process-step" data-step="09">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="18" r="14"/><path d="M18 10v8l5 3"/></svg>
+        </div>
+        <h4>Support</h4>
+        <p>Ongoing maintenance, monitoring, and rapid incident response</p>
+      </div>
+
+      <div class="process-step" data-step="10">
+        <div class="process-step-number">
+          <svg class="process-step-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 8 26 12 22 16"/><line x1="10" y1="12" x2="26" y2="12"/><polyline points="14 20 10 24 14 28"/><line x1="26" y1="24" x2="10" y2="24"/></svg>
+        </div>
+        <h4>Continuous Improvement</h4>
+        <p>Regular reviews, feature additions, and future-proofing</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Industries Section ──────────────────────────────────── -->
+<section id="industries" class="section" aria-labelledby="industries-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">Industries We Serve</div>
+      <h2 id="industries-heading">Solutions Across Every Sector</h2>
+      <p>We bring deep industry awareness to every engagement, understanding the unique challenges and compliance requirements of each sector.</p>
+    </div>
+
+    <div class="industries-grid stagger-children">
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(37,99,235,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+        </div>
+        <h4>Retail &amp; E-commerce</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(16,185,129,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h4>Healthcare</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(6,182,212,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <h4>Education</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(251,146,60,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <h4>Finance &amp; Banking</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(124,58,237,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4>Hospitality</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(239,68,68,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        </div>
+        <h4>Manufacturing</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(37,99,235,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg>
+        </div>
+        <h4>Government</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(16,185,129,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h4>NGOs &amp; Non-Profits</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(6,182,212,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12M12 12C12 12 7 10.5 7 7.5a5 5 0 0110 0C17 10.5 12 12 12 12z"/><path d="M7 17l-5 3M17 17l5 3"/></svg>
+        </div>
+        <h4>Agriculture</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(251,146,60,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h4>Logistics &amp; Transport</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(124,58,237,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h4>SMEs &amp; Startups</h4>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon" style="background:rgba(37,99,235,0.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4>Corporate Organizations</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Tech Stack Section ──────────────────────────────────── -->
+<section id="tech-stack" class="section" aria-labelledby="tech-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">Technology Stack</div>
+      <h2 id="tech-heading">Built with Modern, Battle-Tested Technologies</h2>
+      <p>We work with the industry's leading tools and platforms to ensure your solutions are reliable, scalable, and maintainable long-term.</p>
+    </div>
+
+    <div class="tech-categories">
+
+      <div class="reveal">
+        <h4>Frontend Development</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#61dafb;"></span>React</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#000;"></span>Next.js</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#42b883;"></span>Vue.js</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#06b6d4;"></span>Tailwind CSS</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#f7df1e;"></span>JavaScript</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#3178c6;"></span>TypeScript</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4>Backend Development</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#68a063;"></span>Node.js</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#3776ab;"></span>Python</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#007396;"></span>Java</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#777bb4;"></span>PHP</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#512bd4;"></span>.NET</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#e34f26;"></span>Laravel</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4>Mobile Development</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#54c5f8;"></span>Flutter</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#61dafb;"></span>React Native</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#3ddc84;"></span>Android</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#000;"></span>iOS / Swift</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4>Databases</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#336791;"></span>PostgreSQL</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#4479a1;"></span>MySQL</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#47a248;"></span>MongoDB</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#ffa000;"></span>Firebase</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#dc382d;"></span>Redis</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#00d4aa;"></span>Supabase</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4>Cloud &amp; Infrastructure</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#ff9900;"></span>AWS</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#0078d4;"></span>Azure</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#4285f4;"></span>Google Cloud</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#2496ed;"></span>Docker</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#326ce5;"></span>Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4>Artificial Intelligence &amp; ML</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#ff6f00;"></span>TensorFlow</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#ee4c2c;"></span>PyTorch</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#412991;"></span>OpenAI APIs</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#00a0dc;"></span>LangChain</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#f9a825;"></span>Hugging Face</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4>Networking</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#1ba0d7;"></span>Cisco</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#dc143c;"></span>MikroTik</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#0559c9;"></span>Ubiquiti</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#ed1c24;"></span>Fortinet</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#e0401b;"></span>pfSense</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4>Cybersecurity</h4>
+        <div class="tech-items">
+          <span class="tech-item"><span class="tech-item-dot" style="background:#2196f3;"></span>OWASP</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#4caf50;"></span>Firewalls</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#9c27b0;"></span>SIEM</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#ff5722;"></span>Encryption</span>
+          <span class="tech-item"><span class="tech-item-dot" style="background:#607d8b;"></span>Penetration Testing</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Portfolio Section ───────────────────────────────────── -->
+<section id="portfolio" class="section" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">Solutions We Build</div>
+      <h2 id="portfolio-heading">The Types of Solutions We Deliver</h2>
+      <p>Every card below represents the category of solution we design, build, test, and deploy for our clients. Each implementation is fully customized to your business.</p>
+    </div>
+
+    <div class="portfolio-grid stagger-children">
+
+      <div class="portfolio-card">
+        <div class="portfolio-img" style="background:linear-gradient(135deg,#0a0e1a,#1e293b);">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="5" y="10" width="50" height="36" rx="4" stroke="#2563eb" stroke-width="2"/>
+            <rect x="10" y="16" width="18" height="12" rx="2" fill="rgba(37,99,235,0.2)" stroke="#2563eb" stroke-width="1.5"/>
+            <rect x="32" y="16" width="18" height="5" rx="2" fill="rgba(6,182,212,0.2)" stroke="#06b6d4" stroke-width="1.5"/>
+            <rect x="32" y="24" width="18" height="4" rx="2" fill="rgba(6,182,212,0.1)" stroke="#06b6d4" stroke-width="1"/>
+            <rect x="10" y="32" width="40" height="4" rx="2" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <rect x="10" y="39" width="30" height="4" rx="2" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          </svg>
+          <div class="portfolio-overlay">
+            <span style="color:white;font-size:0.8rem;font-weight:600;padding:8px 16px;background:rgba(37,99,235,0.7);border-radius:20px;">Custom Solution</span>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Enterprise Software</div>
+          <h3>Business Management Systems</h3>
+          <p>End-to-end ERP and business management platforms tailored to your organization's unique workflows and data requirements.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-img" style="background:linear-gradient(135deg,#0a1628,#1a2744);">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="8" y="8" width="44" height="44" rx="6" stroke="#06b6d4" stroke-width="2"/>
+            <path d="M20 30l6 6 14-14" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="30" cy="22" r="5" stroke="#2563eb" stroke-width="1.5"/>
+          </svg>
+          <div class="portfolio-overlay">
+            <span style="color:white;font-size:0.8rem;font-weight:600;padding:8px 16px;background:rgba(6,182,212,0.7);border-radius:20px;">Custom Solution</span>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Retail Technology</div>
+          <h3>Point of Sale Systems</h3>
+          <p>Modern POS platforms with inventory tracking, receipt printing, sales analytics, and multi-branch support for retail businesses.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-img" style="background:linear-gradient(135deg,#0f0a1e,#1e1040);">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="30" cy="22" r="10" stroke="#7c3aed" stroke-width="2"/>
+            <path d="M12 50c0-9.94 8.06-18 18-18s18 8.06 18 18" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="44" cy="38" r="6" fill="rgba(124,58,237,0.2)" stroke="#7c3aed" stroke-width="1.5"/>
+            <path d="M42 38l1.5 1.5L46 36" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <div class="portfolio-overlay">
+            <span style="color:white;font-size:0.8rem;font-weight:600;padding:8px 16px;background:rgba(124,58,237,0.7);border-radius:20px;">Custom Solution</span>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">HR Technology</div>
+          <h3>HR &amp; Payroll Platforms</h3>
+          <p>Complete human resource management systems with payroll processing, leave management, employee records, and performance tracking.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-img" style="background:linear-gradient(135deg,#0a1628,#091e38);">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="30" cy="30" r="18" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <rect x="18" y="22" width="24" height="16" rx="4" fill="rgba(37,99,235,0.15)" stroke="#2563eb" stroke-width="1.5"/>
+            <circle cx="30" cy="30" r="4" fill="#2563eb"/>
+            <path d="M27 30l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <div class="portfolio-overlay">
+            <span style="color:white;font-size:0.8rem;font-weight:600;padding:8px 16px;background:rgba(37,99,235,0.7);border-radius:20px;">Custom Solution</span>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Artificial Intelligence</div>
+          <h3>AI-Powered Assistants</h3>
+          <p>Intelligent conversational AI and automation tools that handle customer inquiries, streamline processes, and deliver business insights.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-img" style="background:linear-gradient(135deg,#0a1e14,#0f2d1c);">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="6" y="10" width="48" height="40" rx="4" stroke="#10b981" stroke-width="2"/>
+            <path d="M6 22h48" stroke="#10b981" stroke-width="1.5"/>
+            <rect x="12" y="28" width="8" height="16" rx="2" fill="rgba(16,185,129,0.2)" stroke="#10b981" stroke-width="1.5"/>
+            <rect x="24" y="32" width="8" height="12" rx="2" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1.5"/>
+            <rect x="36" y="24" width="8" height="20" rx="2" fill="rgba(16,185,129,0.25)" stroke="#10b981" stroke-width="1.5"/>
+          </svg>
+          <div class="portfolio-overlay">
+            <span style="color:white;font-size:0.8rem;font-weight:600;padding:8px 16px;background:rgba(16,185,129,0.7);border-radius:20px;">Custom Solution</span>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Inventory Management</div>
+          <h3>Inventory &amp; Stock Systems</h3>
+          <p>Real-time inventory tracking, purchase order management, supplier portals, and automated reorder alerts for warehouses and retail.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-img" style="background:linear-gradient(135deg,#0a0e1a,#1a1040);">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 18a6 6 0 016-6h28a6 6 0 016 6v10a6 6 0 01-6 6H16a6 6 0 01-6-6V18z" stroke="#f97316" stroke-width="2"/>
+            <path d="M30 34v12M22 50h16" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="24" r="3" stroke="#f97316" stroke-width="1.5"/>
+            <circle cx="30" cy="24" r="3" stroke="#f97316" stroke-width="1.5"/>
+            <circle cx="38" cy="24" r="3" stroke="#f97316" stroke-width="1.5"/>
+          </svg>
+          <div class="portfolio-overlay">
+            <span style="color:white;font-size:0.8rem;font-weight:600;padding:8px 16px;background:rgba(249,115,22,0.7);border-radius:20px;">Custom Solution</span>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-type">Education Technology</div>
+          <h3>School Management Systems</h3>
+          <p>Comprehensive school ERP covering admissions, fee management, academics, timetabling, attendance, and parent-teacher communication.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="portfolio-notice reveal">
+      <p>Each portfolio card represents the <strong>type of solution</strong> we build — not a specific past project. Every implementation is custom-built for each client's unique requirements.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Quality Commitment ──────────────────────────────────── -->
+<section id="quality" class="section" aria-labelledby="quality-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">Our Commitment</div>
+      <h2 id="quality-heading" style="color:white;">Built Right, Every Time</h2>
+      <p>Professional engineering practices aren't optional — they're the foundation of everything we deliver.</p>
+    </div>
+
+    <div class="quality-grid stagger-children">
+
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        <h4>Tested Before Delivery</h4>
+        <p>Every system undergoes thorough functional, performance, and security testing before deployment. Nothing ships without meeting our quality checklist.</p>
+      </div>
+
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Security From Day One</h4>
+        <p>Security is designed into every system from the beginning — authentication, data encryption, input validation, and access control are core requirements, not add-ons.</p>
+      </div>
+
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h4>Performance First</h4>
+        <p>We optimize for speed, efficiency, and scalability from architecture level. Systems that perform under load and grow gracefully with your business.</p>
+      </div>
+
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h4>Fully Documented</h4>
+        <p>Clean code, technical documentation, API references, and user manuals are delivered with every project so your team can operate and maintain independently.</p>
+      </div>
+
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>Ongoing Support</h4>
+        <p>Our relationship doesn't end at launch. We offer maintenance agreements, updates, monitoring, and responsive support to keep your systems running perfectly.</p>
+      </div>
+
+      <div class="quality-card">
+        <div class="quality-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h4>Professional Project Management</h4>
+        <p>Dedicated project leads, clear communication channels, milestone tracking, and transparent progress reporting throughout the entire engagement.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ Section ─────────────────────────────────────────── -->
+<section id="faq" class="section" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">Common Questions</div>
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <p>Practical answers to the questions we hear most often from clients considering working with us.</p>
+    </div>
+
+    <div class="faq-list" id="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Can you build fully custom software from scratch?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Yes. Custom software development is one of our core services. Whether you need a web application, mobile app, management system, or a complex enterprise platform, we design and build it from the ground up to fit your exact requirements. We start with thorough discovery and planning to make sure we fully understand your needs before writing any code.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Can you work on and improve an existing system?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Absolutely. We regularly work with clients who have existing systems that need improvements, bug fixes, new features, or a complete overhaul. We take time to understand the current codebase before proposing changes, and we work carefully to avoid disrupting your existing operations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Do you offer maintenance and support after delivery?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Yes. We offer flexible maintenance agreements that cover bug fixes, security patches, performance monitoring, minor enhancements, and technical support. We believe long-term relationships make for better systems — and better value for our clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">How long does a typical project take?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Project timelines depend heavily on scope and complexity. A simple website or landing page might take 1–2 weeks. A business management system or mobile app typically takes 6–16 weeks. Enterprise platforms and complex integrations may take several months. We provide a detailed timeline during our planning phase so you always know what to expect.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">How much does custom software cost?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Pricing varies significantly based on the complexity, features, and timeline of each project. We provide transparent, detailed quotations after a free discovery session. We work with businesses of different sizes and always aim to propose solutions that deliver the best value within your budget — without compromising on quality or security.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Can you work with clients remotely or across Kenya?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Yes. We work with clients across Kenya and internationally. We use structured remote collaboration tools — video calls, project management platforms, shared documentation — to ensure smooth communication regardless of location. For hardware and on-site IT work, we serve Nairobi and can discuss travel arrangements for other regions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">How do we get started with ChiefinTechSolutions?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Simply reach out through our contact form, email, or WhatsApp. We'll schedule a free initial consultation where we listen to your challenges and goals. From there, we'll propose a tailored approach and provide a clear project outline. There's no pressure — we want to make sure we're the right fit for your needs before anything else.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Blog / Insights ─────────────────────────────────────── -->
+<section id="blog" class="section" aria-labelledby="blog-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">Insights &amp; Articles</div>
+      <h2 id="blog-heading">Technology Perspectives</h2>
+      <p>Practical insights on technology trends, business software, cybersecurity, and digital transformation relevant to organizations in Kenya and East Africa.</p>
+    </div>
+
+    <div class="blog-grid stagger-children">
+
+      <a href="#" class="blog-card" aria-label="Read: The Future of AI in Kenyan Businesses">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#0a0e1a,#1e1040);">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M16 24a8 8 0 0116 0"/><circle cx="24" cy="20" r="3"/><path d="M18 32l2-4 4 2 4-2 2 4"/></svg>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-cat">Artificial Intelligence</span>
+            <span class="blog-date">July 2025</span>
+          </div>
+          <h3>The Future of AI in Kenyan Businesses</h3>
+          <p>How artificial intelligence and machine learning are creating tangible opportunities for small and medium enterprises across Kenya's growing tech ecosystem.</p>
+          <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-card" aria-label="Read: Cybersecurity Tips for SMEs">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#1a0a0a,#2d1010);">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v10c0 10-7 19-16 22C9 39 2 30 2 20V10z"/><path d="M16 24l4 4 8-8"/></svg>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-cat">Cybersecurity</span>
+            <span class="blog-date">June 2025</span>
+          </div>
+          <h3>Cybersecurity Tips for SMEs in Kenya</h3>
+          <p>Practical, affordable security measures that every small and medium business should implement to protect their data, customers, and reputation.</p>
+          <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-card" aria-label="Read: Choosing the Right Business Software">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#0a1628,#0f2540);">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="8" width="36" height="28" rx="3"/><path d="M6 18h36M14 8v8M34 8v8"/><circle cx="24" cy="28" r="4"/></svg>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-cat">Business Software</span>
+            <span class="blog-date">May 2025</span>
+          </div>
+          <h3>Choosing the Right Business Software</h3>
+          <p>A practical guide to evaluating whether to buy off-the-shelf software or invest in a custom solution that truly fits your business processes.</p>
+          <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-card" aria-label="Read: How Automation Improves Productivity">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#0a1e0e,#0f2d18);">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="20" width="10" height="20" rx="2"/><rect x="20" y="12" width="10" height="28" rx="2"/><rect x="32" y="6" width="10" height="34" rx="2"/><path d="M8 14l8-8 8 6 12-12"/></svg>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-cat">Automation</span>
+            <span class="blog-date">April 2025</span>
+          </div>
+          <h3>How Business Automation Improves Productivity</h3>
+          <p>Real examples of how automating repetitive tasks — from data entry to reporting — frees your team to focus on work that actually grows your business.</p>
+          <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-card" aria-label="Read: Digital Transformation in East Africa">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#1a0e0a,#2d1a0f);">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="18"/><line x1="24" y1="6" x2="24" y2="42"/><path d="M6 24h36"/><path d="M24 6c-6 4-10 10-10 18s4 14 10 18M24 6c6 4 10 10 10 18s-4 14-10 18"/></svg>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-cat">Digital Transformation</span>
+            <span class="blog-date">March 2025</span>
+          </div>
+          <h3>Digital Transformation in East Africa</h3>
+          <p>Why Kenya and the broader East African region represents one of the most exciting digital transformation opportunities — and how businesses can capitalize on it.</p>
+          <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="#" class="blog-card" aria-label="Read: Building Scalable Software Architecture">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#0f0a1e,#180f30);">
+          <svg viewBox="0 0 48 48" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="8" rx="2"/><rect x="6" y="22" width="12" height="8" rx="2"/><rect x="30" y="14" width="12" height="8" rx="2"/><rect x="30" y="30" width="12" height="8" rx="2"/><path d="M18 10h6a6 6 0 016 6M18 26h6a6 6 0 016-6M18 26h6a6 6 0 016 6"/></svg>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-cat">Engineering</span>
+            <span class="blog-date">February 2025</span>
+          </div>
+          <h3>Building Scalable Software Architecture</h3>
+          <p>The architectural decisions that separate software that scales gracefully from systems that become a burden as your organization grows.</p>
+          <span class="blog-read-more">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA Banner Section ──────────────────────────────────── -->
+<section class="container" aria-label="Call to Action Banner">
+  <div class="cta-banner reveal">
+    <div class="cta-banner-photo" aria-hidden="true"></div>
+    <h2>Partner with ChiefinTechSolutions Today</h2>
+    <p>Get professional engineering, modern scalable technology, and dedicated long-term support for your business solutions.</p>
+    <div class="cta-banner-actions">
+      <a href="#contact" class="btn btn-primary btn-lg">Request a Free Consultation</a>
+      <a href="tel:+254790901285" class="btn btn-outline btn-lg">Call Our Office</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact Section ─────────────────────────────────────── -->
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-badge">Get In Touch</div>
+      <h2 id="contact-heading">Let's Build Something Great Together</h2>
+      <p>Tell us about your project or challenge. We'll get back to you within one business day with a clear, no-pressure response.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <h3>Start a Conversation</h3>
+        <p>Whether you have a detailed brief or just an idea, we're ready to listen and help you figure out the right path forward.</p>
+
+        <div class="contact-methods">
+          <a href="tel:+254790901285" class="contact-method" aria-label="Call us">
+            <div class="contact-method-icon" style="background:rgba(37,99,235,0.1);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Phone</div>
+              <div class="contact-method-value">+254 790 901 285</div>
+            </div>
+          </a>
+
+          <a href="mailto:hello@chiefintechsolutions.co.ke" class="contact-method" aria-label="Email us">
+            <div class="contact-method-icon" style="background:rgba(6,182,212,0.1);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Email</div>
+              <div class="contact-method-value">hello@chiefintechsolutions.co.ke</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/254790901285" class="contact-method" aria-label="WhatsApp us" target="_blank" rel="noopener noreferrer">
+            <div class="contact-method-icon" style="background:rgba(37,211,102,0.1);">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">WhatsApp</div>
+              <div class="contact-method-value">+254 790 901 285</div>
+            </div>
+          </a>
+
+          <div class="contact-method" style="cursor:default;">
+            <div class="contact-method-icon" style="background:rgba(249,115,22,0.1);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Location</div>
+              <div class="contact-method-value">Nairobi, Kenya</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-hours">
+          <h4>Business Hours</h4>
+          <p>Monday – Friday: 8:00 AM – 6:00 PM EAT<br>Saturday: 9:00 AM – 2:00 PM EAT<br>Sunday &amp; Public Holidays: Closed</p>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal-right">
+        <h3 class="form-title">Send Us a Message</h3>
+        <p class="form-subtitle">Fill out the form below and we'll respond within one business day.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name *</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="John Mwangi" required autocomplete="name" />
+              <span class="form-error" id="name-error">Please enter your full name.</span>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="john@company.co.ke" required autocomplete="email" />
+              <span class="form-error" id="email-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-phone" class="form-label">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+254 790 901 285" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="contact-company" class="form-label">Company / Organization</label>
+              <input type="text" id="contact-company" name="company" class="form-input" placeholder="Acme Corp" autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-service" class="form-label">Service of Interest *</label>
+            <select id="contact-service" name="service" class="form-select" required>
+              <option value="" disabled selected>Select a service area…</option>
+              <option value="software">Software Development</option>
+              <option value="networking">Networking Solutions</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="hardware">Hardware &amp; IT Infrastructure</option>
+              <option value="ai">Artificial Intelligence &amp; ML</option>
+              <option value="robotics">Robotics &amp; Automation</option>
+              <option value="other">Other / Not Sure Yet</option>
+            </select>
+            <span class="form-error" id="service-error">Please select a service area.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Tell Us About Your Project *</label>
+            <textarea id="contact-message" name="message" class="form-textarea" placeholder="Briefly describe your challenge, goals, or what you'd like to build. There are no wrong answers — we'll help clarify the details together." required></textarea>
+            <span class="form-error" id="message-error">Please describe your project or challenge.</span>
+          </div>
+
+          <div class="form-success" id="form-success">
+            <p>✓ Thank you! We've received your message and will be in touch within one business day.</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" id="form-submit" style="width:100%;justify-content:center;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────── -->
+<footer id="footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 11L8.5 15.5L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          Chiefin<span>Tech</span>
+        </a>
+        <p>A trusted technology partner helping organizations across East Africa build, secure, and scale with modern technology solutions.</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Follow us on LinkedIn" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Follow us on Twitter / X" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Follow us on Facebook" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Follow us on GitHub" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Company</h5>
+        <nav class="footer-links" aria-label="Company links">
+          <a href="#about"    class="footer-link">About Us</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#why-us"   class="footer-link">Why Choose Us</a>
+          <a href="#process"  class="footer-link">Our Process</a>
+          <a href="#portfolio" class="footer-link">Portfolio</a>
+          <a href="#blog"     class="footer-link">Insights</a>
+        </nav>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>Services</h5>
+        <nav class="footer-links" aria-label="Services links">
+          <a href="#services" class="footer-link">Software Development</a>
+          <a href="#services" class="footer-link">Networking</a>
+          <a href="#services" class="footer-link">Cybersecurity</a>
+          <a href="#services" class="footer-link">IT Infrastructure</a>
+          <a href="#services" class="footer-link">AI &amp; Machine Learning</a>
+          <a href="#services" class="footer-link">Robotics &amp; Automation</a>
+        </nav>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <nav class="footer-links" aria-label="Legal links">
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-link">Terms &amp; Conditions</a>
+          <a href="cookies.html" class="footer-link">Cookie Policy</a>
+          <a href="#faq" class="footer-link">FAQ</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-col">
+        <h5>Stay Updated</h5>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-bottom:var(--space-md);">Technology insights and company news delivered to your inbox.</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <input type="email" class="newsletter-input" placeholder="your@email.com" aria-label="Email for newsletter" required autocomplete="email" />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2025</span> ChiefinTechSolutions. All rights reserved. Proudly built in Kenya 🇰🇪</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── AI Chatbot Widget ────────────────────────────────────── -->
+<div class="chat-window" id="chat-window" role="dialog" aria-label="AI Technology Assistant" aria-modal="false">
+  <div class="chat-header">
+    <div class="chat-header-profile">
+      <div class="chat-avatar" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span class="chat-status-dot"></span>
+      </div>
+      <div class="chat-header-info">
+        <h4>ChiefinTech AI Assistant</h4>
+        <span>Online • Ask us anything</span>
+      </div>
+    </div>
+    <button class="chat-close-btn" id="chat-close" aria-label="Close Chat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <div class="chat-body" id="chat-body">
+    <!-- Initial greeting -->
+    <div class="chat-msg-row assistant">
+      <div class="chat-bubble-msg">
+        Hello! I am your ChiefinTech AI Assistant. How can I help you with your technology requirements today?
+      </div>
+    </div>
+    
+    <!-- Quick reply suggestions -->
+    <div class="chat-chips-container" id="chat-chips">
+      <span class="chat-chips-title">Suggested Questions</span>
+      <div class="chat-suggestion-chips">
+        <button class="chat-chip">Do you build custom software?</button>
+        <button class="chat-chip">How do I request a quote?</button>
+        <button class="chat-chip">What is your telephone number?</button>
+        <button class="chat-chip">Where are you located?</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-input-area">
+    <input type="text" class="chat-input" id="chat-input" placeholder="Type a message…" aria-label="Type your message" autocomplete="off" />
+    <button class="chat-send-btn" id="chat-send" aria-label="Send Message">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ── Floating Buttons ────────────────────────────────────── -->
+<div class="floating-buttons" aria-label="Quick action buttons">
+  <!-- AI Chatbot Trigger -->
+  <button class="chat-btn" id="chat-btn" aria-label="Open AI Assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span class="chat-tooltip">AI Assistant</span>
+  </button>
+
+  <a href="https://wa.me/254790901285" class="whatsapp-btn" id="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  </a>
+  <button class="back-top-btn" id="back-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+</div>
+
+<!-- ── Search Overlay ──────────────────────────────────────── -->
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Search" aria-modal="true">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <span class="search-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </span>
+      <input type="search" id="search-input" class="search-input" placeholder="Search services, industries, topics…" aria-label="Search" autocomplete="off" />
+      <button class="search-close" id="search-close" aria-label="Close search">ESC</button>
+    </div>
+    <p class="search-hint">Press ESC to close • Try "software", "cybersecurity", "AI"</p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
