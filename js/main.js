@@ -571,7 +571,87 @@ function initChatbot() {
   // Rules are checked in order; first match wins.
   const KB = [
 
-    // ── Greetings ──────────────────────────────────────────────
+    // ════════════════════════════════════════════════════════════
+    // 🌍 MULTI-LANGUAGE SECTION (Swahili, French, Spanish, German)
+    // ════════════════════════════════════════════════════════════
+
+    // ── Swahili Rules ──────────────────────────────────────────
+    {
+      keywords: ['mambo', 'habari', 'jambo', 'hujambo', 'sasa', 'vipi', 'niaje', 'habari yako'],
+      response: "Habari! 👋 Karibu ChiefinTechSolutions! Mimi ni msaidizi wako wa AI. Unaweza kuniuliza kuhusu huduma zetu za kiteknolojia kama vile kutengeneza mifumo ya programu (software), tovuti (websites), usalama wa mitandao (cybersecurity), au mitandao ya ofisi (networking). Nikupe usaidizi gani leo?"
+    },
+    {
+      keywords: ['programu', 'tovuti', 'mifumo', 'software kiswahili', 'website kiswahili'],
+      response: "ChiefinTechSolutions inatengeneza programu maalum za kompyuta (custom software), tovuti za kisasa (websites), mifumo ya ERP, CRM, POS, na programu za simu (iOS & Android). Mifumo yetu yote ni salama, ya haraka, na inalingana na mahitaji ya biashara yako."
+    },
+    {
+      keywords: ['usalama wa mitandao', 'usalama wa mifumo', 'udukuzi', 'kuzuia udukuzi', 'usalama kiswahili'],
+      response: "Tunatoa huduma za usalama wa mifumo na mitandao (cybersecurity) ikiwa ni pamoja na kufanya majaribio ya udukuzi (penetration testing), kuzuia udukuzi (firewall configuration), na kuweka mifumo salama ya kuhifadhi data (data backups). Mifumo yetu yote inajengwa kwa kuzingatia usalama."
+    },
+    {
+      keywords: ['mitandao ya ofisi', 'nyaya za mtandao', 'ruta', 'swichi', 'wifi kiswahili'],
+      response: "Tunafanya usanifu na ufungaji wa mitandao ya ofisi (LAN/WAN), ufungaji wa nyaya za mtandao (structured cabling Cat6/fiber), mifumo ya Wi-Fi ya kampuni, na usanidi wa swichi na ruta (Cisco, MikroTik, Ubiquiti)."
+    },
+    {
+      keywords: ['bei gani', 'gharama ya', 'gharama za', 'bei ya', 'bei za', 'quote kiswahili', 'bei kiswahili'],
+      response: "Tunatoa ushauri wa kwanza BILA GHARAMA yoyote. Bei za miradi yetu inategemea ukubwa na mahitaji ya mradi wako. Tafadhali jaza fomu ya mawasiliano hapa chini, tutumie barua pepe kwa hello@chiefintechsolutions.co.ke, au tupigie simu/WhatsApp kwa +254 790 901 285."
+    },
+    {
+      keywords: ['ofisi zenu', 'wapi', 'mahali ofisi', 'nairobi kenya kiswahili'],
+      response: "Ofisi zetu kuu ziko Nairobi, Kenya 🇰🇪. Tunahudumia wateja kote nchini na pia remotely katika nchi za Afrika Mashariki (Uganda, Tanzania, Rwanda)."
+    },
+    {
+      keywords: ['nambari ya simu', 'mawasiliano kiswahili', 'tupigie', 'barua pepe kiswahili'],
+      response: "Unaweza kuwasiliana nasi kwa Simu au WhatsApp kwa nambari +254 790 901 285, au barua pepe hello@chiefintechsolutions.co.ke. Sisi hujibu maswali yote ndani ya siku moja ya kazi."
+    },
+
+    // ── French Rules ───────────────────────────────────────────
+    {
+      keywords: ['bonjour', 'salut', 'bonsoir', 'coucou', 'comment ca va'],
+      response: "Bonjour! 👋 Bienvenue chez ChiefinTechSolutions! Je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui avec vos projets technologiques?"
+    },
+    {
+      keywords: ['logiciel', 'logiciels', 'site web', 'sites web', 'application mobile', 'applications mobiles'],
+      response: "ChiefinTechSolutions conçoit des logiciels sur mesure, des sites web professionnels, des applications mobiles (iOS et Android), ainsi que des systèmes ERP et CRM adaptés à vos besoins d'affaires."
+    },
+    {
+      keywords: ['cybersécurité', 'sécurité informatique', 'pare-feu', 'test d\'intrusion'],
+      response: "Nous offrons des services de cybersécurité complets: tests d'intrusion (penetration testing), audits de sécurité, configuration de pare-feu et plans de sauvegarde de données."
+    },
+    {
+      keywords: ['prix french', 'devis', 'tarif', 'tarifs', 'coût devis'],
+      response: "Nous proposons des consultations initiales gratuites. Pour obtenir un devis ou nous contacter, appelez le +254 790 901 285 (WhatsApp disponible) ou écrivez à hello@chiefintechsolutions.co.ke."
+    },
+
+    // ── Spanish Rules ──────────────────────────────────────────
+    {
+      keywords: ['buenos dias', 'buenas tardes', 'buenas noches', 'como estas'],
+      response: "¡Hola! 👋 ¡Bienvenido a ChiefinTechSolutions! Soy tu asistente virtual. ¿Cómo puedo ayudarte hoy con tus requerimientos tecnológicos?"
+    },
+    {
+      keywords: ['sitio web spanish', 'sitios web spanish', 'desarrollo de software', 'aplicacion movil', 'aplicaciones moviles'],
+      response: "Desarrollamos software a medida, sitios web profesionales, aplicaciones móviles (iOS y Android) y sistemas de gestión empresarial (ERP y CRM)."
+    },
+    {
+      keywords: ['precio spanish', 'costo spanish', 'cotizacion', 'tarifas spanish'],
+      response: "Ofrecemos asesoría inicial gratuita. Para cotizaciones o consultas, contáctanos al +254 790 901 285 (WhatsApp) o escribe a hello@chiefintechsolutions.co.ke."
+    },
+
+    // ── German Rules ───────────────────────────────────────────
+    {
+      keywords: ['guten tag', 'guten morgen', 'guten abend', 'wie gehts'],
+      response: "Hallo! 👋 Willkommen bei ChiefinTechSolutions! Ich bin Ihr KI-Assistent. Wie kann ich Ihnen heute bei Ihren technologischen Anforderungen helfen?"
+    },
+    {
+      keywords: ['softwareentwicklung', 'webseite german', 'webseiten german', 'anwendung german', 'anwendungen german'],
+      response: "Wir entwickeln maßgeschneiderte Software, professionelle Webseiten, mobile Apps (iOS & Android) sowie ERP- und CRM-Systeme für Ihr Unternehmen."
+    },
+    {
+      keywords: ['preis german', 'preise german', 'kosten german', 'angebot german'],
+      response: "Wir bieten eine kostenlose Erstberatung. Für Angebote oder Fragen kontaktieren Sie uns unter +254 790 901 285 (WhatsApp) oder per E-Mail an hello@chiefintechsolutions.co.ke."
+    },
+
+    // ── English Rules (Fallback & Standard) ────────────────────
     {
       keywords: ['hi', 'hello', 'hey', 'good morning', 'good afternoon', 'good evening', 'howdy', 'hola', 'greetings', 'sup', 'yo'],
       response: "Hello! 👋 Welcome to ChiefinTechSolutions! I'm your AI assistant, ready to help you with any questions about our technology services. What can I help you with today?"
