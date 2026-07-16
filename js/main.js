@@ -868,7 +868,21 @@ function initChatbot() {
     // Check each rule for a keyword match
     for (const rule of KB) {
       for (const kw of rule.keywords) {
-        if (text.includes(kw)) {
+        // Escape special regex characters
+        const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        
+        // Build regex pattern requiring word boundaries only for word-starting/ending keywords
+        let pattern = '';
+        if (/^[a-zA-Z0-9_]/.test(kw)) {
+          pattern += '\\b';
+        }
+        pattern += escaped;
+        if (/[a-zA-Z0-9_]$/.test(kw)) {
+          pattern += '\\b';
+        }
+
+        const regex = new RegExp(pattern, 'i');
+        if (regex.test(text)) {
           return rule.response;
         }
       }
