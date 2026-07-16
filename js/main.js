@@ -658,85 +658,85 @@ function initChatbot() {
 
     // ── Custom Software / Web Development ──────────────────────
     {
-      keywords: ['software', 'web', 'website', 'landing page', 'portal', 'dashboard', 'erp', 'pos', 'crm', 'saas', 'platform', 'system', 'database', 'backend', 'frontend', 'full stack', 'fullstack'],
+      keywords: ['software', 'web', 'website', 'websites', 'landing page', 'landing pages', 'portal', 'portals', 'dashboard', 'dashboards', 'erp', 'pos', 'crm', 'saas', 'platform', 'platforms', 'system', 'systems', 'database', 'databases', 'backend', 'frontend', 'full stack', 'fullstack'],
       response: "Our software team builds:\n• Responsive websites & business portals\n• Custom ERP, CRM, and POS systems\n• SaaS platforms & multi-tenant applications\n• Admin dashboards & management systems\n• API development & third-party integrations\n• Database design (MySQL, PostgreSQL, MongoDB)\n\nEvery solution is engineered to your exact business workflow — no off-the-shelf templates."
     },
 
     // ── Mobile Apps ────────────────────────────────────────────
     {
-      keywords: ['mobile', 'android', 'ios', 'app', 'flutter', 'react native', 'phone app', 'smartphone'],
+      keywords: ['mobile', 'android', 'ios', 'app', 'apps', 'flutter', 'react native', 'phone app', 'phone apps', 'smartphone', 'smartphones'],
       response: "We develop native and cross-platform mobile applications for Android and iOS:\n• Flutter & React Native cross-platform apps\n• Native Android (Kotlin/Java) development\n• Native iOS (Swift) development\n• M-Pesa / payment gateway integrations\n• Offline-capable field apps\n• App Store & Google Play deployment\n\nFrom idea to launch, we handle the full mobile development lifecycle."
     },
 
     // ── E-Commerce ─────────────────────────────────────────────
     {
-      keywords: ['ecommerce', 'e-commerce', 'shop', 'store', 'online store', 'shopping cart', 'woocommerce', 'shopify', 'sell online'],
+      keywords: ['ecommerce', 'e-commerce', 'shop', 'shops', 'store', 'stores', 'online store', 'online stores', 'shopping cart', 'shopping carts', 'woocommerce', 'shopify', 'sell online'],
       response: "We build fully custom e-commerce solutions including online stores with shopping carts, inventory management, M-Pesa and card payment integrations, order tracking, and logistics APIs. We also set up and customize WooCommerce and Shopify stores with custom themes and plugins tailored for the Kenyan market."
     },
 
     // ── Cybersecurity ──────────────────────────────────────────
     {
-      keywords: ['security', 'cyber', 'penetration', 'pen test', 'firewall', 'hack', 'vulnerability', 'protect', 'compliance', 'gdpr', 'iso', 'data breach', 'endpoint', 'antivirus', 'ransomware'],
+      keywords: ['security', 'cyber', 'penetration', 'pen test', 'pen tests', 'firewall', 'firewalls', 'hack', 'hacks', 'vulnerability', 'vulnerabilities', 'protect', 'compliance', 'gdpr', 'iso', 'data breach', 'endpoint', 'endpoints', 'antivirus', 'ransomware'],
       response: "Our cybersecurity services include:\n• Professional penetration testing (web, mobile, network)\n• Vulnerability assessments & security audits\n• Firewall & endpoint security configuration\n• Security Information & Event Management (SIEM)\n• Data backup, recovery planning & disaster response\n• Staff security awareness training\n• ISO 27001 & compliance consulting\n\nWe build all our systems secure-by-design from day one."
     },
 
     // ── Networking ─────────────────────────────────────────────
     {
-      keywords: ['network', 'cable', 'cabling', 'wifi', 'wi-fi', 'switch', 'router', 'lan', 'wan', 'vpn', 'cisco', 'mikrotik', 'ubiquiti', 'fiber', 'server room', 'structured'],
+      keywords: ['network', 'networks', 'cable', 'cables', 'cabling', 'wifi', 'wi-fi', 'switch', 'switches', 'router', 'routers', 'lan', 'wan', 'vpn', 'vpns', 'cisco', 'mikrotik', 'ubiquiti', 'fiber', 'server room', 'server rooms', 'structured'],
       response: "We handle all enterprise networking needs:\n• LAN/WAN design & implementation\n• Structured office cabling (Cat5e, Cat6, fiber)\n• Business Wi-Fi system design & installation\n• Cisco, MikroTik, and Ubiquiti configurations\n• Corporate VPN setup & firewall rules\n• Server room & rack installation\n• Network monitoring & performance optimization"
     },
 
     // ── Cloud Services ─────────────────────────────────────────
     {
-      keywords: ['cloud', 'aws', 'azure', 'google cloud', 'gcp', 'hosting', 'vps', 'server', 'devops', 'docker', 'kubernetes', 'deployment', 'ci/cd'],
+      keywords: ['cloud', 'aws', 'azure', 'google cloud', 'gcp', 'hosting', 'vps', 'server', 'servers', 'devops', 'docker', 'kubernetes', 'deployment', 'deployments', 'ci/cd'],
       response: "We provide cloud infrastructure services including:\n• AWS, Microsoft Azure, and Google Cloud setup\n• VPS provisioning, configuration & hardening\n• Docker containerization & Kubernetes orchestration\n• CI/CD pipeline design (GitHub Actions, GitLab)\n• Cloud cost optimization & architecture reviews\n• Managed hosting for web apps and APIs\n• Automated backups & disaster recovery"
     },
 
     // ── AI & Machine Learning ──────────────────────────────────
     {
-      keywords: ['artificial intelligence', 'machine learning', 'ai', 'ml', 'nlp', 'chatbot', 'generative', 'llm', 'gpt', 'intelligence', 'prediction', 'recommendation', 'deep learning'],
+      keywords: ['artificial intelligence', 'machine learning', 'ai', 'ml', 'nlp', 'chatbot', 'chatbots', 'generative', 'llm', 'llms', 'gpt', 'intelligence', 'prediction', 'predictions', 'recommendation', 'recommendations', 'deep learning'],
       response: "Our AI & ML services include:\n• Custom AI chatbot development (like this one!)\n• Large Language Model (LLM) integrations (GPT, Gemini)\n• Natural Language Processing (NLP) pipelines\n• Predictive analytics dashboards\n• Computer vision & image recognition systems\n• AI-powered recommendation engines\n• Business automation with AI decision-making\n\nWe help businesses harness AI to save time and increase revenue."
     },
 
     // ── Robotics & Automation / IoT ────────────────────────────
     {
-      keywords: ['robot', 'automation', 'iot', 'internet of things', 'sensor', 'rpa', 'robotic process', 'firmware', 'embedded', 'arduino', 'raspberry', 'smart'],
+      keywords: ['robot', 'robots', 'automation', 'automations', 'iot', 'internet of things', 'sensor', 'sensors', 'rpa', 'robotic process', 'firmware', 'embedded', 'arduino', 'raspberry', 'smart'],
       response: "Our robotics & automation solutions include:\n• Robotic Process Automation (RPA) for office workflows\n• Industrial IoT sensor networks & dashboards\n• Custom embedded firmware (Arduino, Raspberry Pi)\n• Smart building automation (lights, HVAC, access control)\n• Automated reporting & data pipeline bots\n• Barcode, RFID, and QR code system integrations"
     },
 
     // ── IT Support & Helpdesk ──────────────────────────────────
     {
-      keywords: ['it support', 'helpdesk', 'help desk', 'maintenance', 'support contract', 'sla', 'troubleshoot', 'repair', 'technical support', 'remote support'],
+      keywords: ['it support', 'helpdesk', 'help desk', 'maintenance', 'support contract', 'support contracts', 'sla', 'slas', 'troubleshoot', 'repair', 'repairs', 'technical support', 'remote support'],
       response: "We offer flexible IT support packages:\n• Remote and on-site helpdesk support\n• Proactive system monitoring & maintenance\n• Hardware repair, upgrade & replacement\n• Software installation & license management\n• Staff IT onboarding & troubleshooting\n• Monthly retainer support contracts available\n\nOur SLA options range from same-day to 4-hour response times depending on your plan."
     },
 
     // ── Hardware & Equipment ───────────────────────────────────
     {
-      keywords: ['hardware', 'computer', 'laptop', 'printer', 'equipment', 'setup', 'configure', 'install', 'workstation', 'server hardware'],
+      keywords: ['hardware', 'computer', 'computers', 'laptop', 'laptops', 'printer', 'printers', 'equipment', 'setup', 'configure', 'install', 'workstation', 'workstations', 'server hardware'],
       response: "We supply and set up business-grade hardware including:\n• Laptops, desktops & workstations\n• Network switches, routers & access points\n• Printers, scanners & multi-function devices\n• UPS units & power protection\n• Server hardware & NAS storage\n• Full office IT infrastructure setup from scratch"
     },
 
     // ── CCTV & Security Cameras ────────────────────────────────
     {
-      keywords: ['cctv', 'camera', 'surveillance', 'security camera', 'nvr', 'dvr', 'ip camera', 'access control', 'biometric'],
+      keywords: ['cctv', 'camera', 'cameras', 'surveillance', 'security camera', 'security cameras', 'nvr', 'dvr', 'ip camera', 'ip cameras', 'access control', 'biometric', 'biometrics'],
       response: "We install and configure:\n• IP CCTV surveillance systems (indoor & outdoor)\n• NVR/DVR recording & remote viewing setup\n• Biometric access control (fingerprint, face recognition)\n• Electric gate & door access control systems\n• Integration with your security command center\n• Remote monitoring via smartphone apps\n\nWe serve offices, warehouses, schools, and residential properties."
     },
 
     // ── M-Pesa & Payment Integrations ─────────────────────────
     {
-      keywords: ['mpesa', 'm-pesa', 'payment', 'payment gateway', 'stripe', 'pesapal', 'paypal', 'flutterwave', 'daraja', 'lipa na mpesa', 'stk push'],
+      keywords: ['mpesa', 'm-pesa', 'payment', 'payments', 'payment gateway', 'payment gateways', 'stripe', 'pesapal', 'paypal', 'flutterwave', 'daraja', 'lipa na mpesa', 'stk push'],
       response: "We specialize in M-Pesa integrations for Kenyan businesses:\n• M-Pesa Daraja API (STK Push, C2B, B2C, B2B)\n• Lipa Na M-Pesa integration for websites & apps\n• PesaPal, Flutterwave, and Stripe payment gateways\n• PayPal and international payment processing\n• Automated payment reconciliation & receipting\n• Subscription billing systems\n\nWe've integrated M-Pesa into countless systems across Kenya."
     },
 
     // ── Data Analytics & Business Intelligence ─────────────────
     {
-      keywords: ['data', 'analytics', 'business intelligence', 'bi', 'report', 'dashboard', 'power bi', 'tableau', 'excel', 'insight', 'kpi', 'metrics'],
+      keywords: ['data', 'analytics', 'business intelligence', 'bi', 'report', 'reports', 'dashboard', 'dashboards', 'power bi', 'tableau', 'excel', 'insight', 'insights', 'kpi', 'kpis', 'metrics'],
       response: "We build data solutions that turn your raw information into actionable insights:\n• Custom analytics dashboards & KPI trackers\n• Power BI & Tableau report development\n• Automated report generation & scheduling\n• Database integration & ETL pipelines\n• Sales, inventory & financial analytics\n• Real-time business performance monitoring"
     },
 
     // ── IT Training ────────────────────────────────────────────
     {
-      keywords: ['training', 'workshop', 'learn', 'course', 'teach', 'educate', 'skills', 'capacity building'],
+      keywords: ['training', 'workshop', 'workshops', 'learn', 'course', 'courses', 'teach', 'educate', 'skills', 'capacity building'],
       response: "We provide practical IT training workshops for businesses and teams:\n• Cybersecurity awareness training for staff\n• Microsoft 365 & Google Workspace training\n• Custom software onboarding & user training\n• Basic IT skills for non-technical staff\n• Advanced training for IT administrators\n• On-site or remote training sessions available\n\nAll training is tailored to your team's current skill level."
     },
 
@@ -748,19 +748,19 @@ function initChatbot() {
 
     // ── Portfolio / Past Work ──────────────────────────────────
     {
-      keywords: ['portfolio', 'past work', 'examples', 'projects', 'case study', 'clients', 'previous', 'experience', 'track record'],
+      keywords: ['portfolio', 'past work', 'examples', 'projects', 'case study', 'case studies', 'clients', 'previous', 'experience', 'track record'],
       response: "We have delivered successful projects across many sectors including:\n• Custom POS systems for retail chains in Nairobi\n• Hospital management systems for healthcare providers\n• School management portals with parent apps\n• E-commerce platforms with M-Pesa integration\n• Office networking for corporate headquarters\n• Cybersecurity audits for financial institutions\n\nVisit our Portfolio section on the website to see featured solutions we build."
     },
 
     // ── Industries Served ──────────────────────────────────────
     {
-      keywords: ['industry', 'sector', 'healthcare', 'hospital', 'education', 'school', 'retail', 'finance', 'bank', 'ngo', 'government', 'hotel', 'hospitality', 'logistics', 'manufacturing', 'sacco'],
+      keywords: ['industry', 'industries', 'sector', 'sectors', 'healthcare', 'hospital', 'hospitals', 'education', 'school', 'schools', 'retail', 'finance', 'bank', 'banks', 'ngo', 'ngos', 'government', 'governments', 'hotel', 'hotels', 'hospitality', 'logistics', 'manufacturing', 'sacco', 'saccos'],
       response: "We serve businesses across all major sectors in Kenya and East Africa:\n\n🏥 Healthcare & hospitals\n🎓 Education & schools\n🏦 Finance, banks & SACCOs\n🏪 Retail & supermarkets\n🏨 Hotels & hospitality\n🚚 Logistics & transport\n🏭 Manufacturing & industry\n🌍 NGOs & development organizations\n🏛️ Government agencies\n📡 Telecommunications\n\nNo matter your industry, we tailor our solutions to your specific needs."
     },
 
     // ── Small Business / Startups ──────────────────────────────
     {
-      keywords: ['small business', 'startup', 'sme', 'entrepreneur', 'new business', 'just starting', 'budget', 'affordable', 'small company'],
+      keywords: ['small business', 'small businesses', 'startup', 'startups', 'sme', 'smes', 'entrepreneur', 'entrepreneurs', 'new business', 'new businesses', 'just starting', 'budget', 'affordable', 'small company', 'small companies'],
       response: "Absolutely! We work with businesses of all sizes — from solo entrepreneurs and early-stage startups to large enterprises. We offer flexible, budget-friendly packages tailored specifically for small and medium businesses. Our goal is to give every business, regardless of size, access to world-class technology. Let's discuss your vision and find a solution that fits your budget."
     },
 
@@ -772,25 +772,25 @@ function initChatbot() {
 
     // ── Project Timeline & Turnaround ──────────────────────────
     {
-      keywords: ['timeline', 'how long', 'duration', 'turnaround', 'deadline', 'time to complete', 'delivery time', 'when will'],
+      keywords: ['timeline', 'timelines', 'how long', 'duration', 'turnaround', 'deadline', 'deadlines', 'time to complete', 'delivery time', 'when will'],
       response: "Project timelines depend on scope and complexity:\n\n⏱️ Simple landing website: 3–7 days\n📱 Mobile app: 4–10 weeks\n🖥️ Custom web platform/ERP: 6–16 weeks\n🔐 Cybersecurity audit: 1–2 weeks\n🌐 Office networking setup: 1–5 days\n☁️ Cloud migration: 1–4 weeks\n\nWe provide a detailed project timeline in your proposal after the discovery call. We always meet agreed deadlines."
     },
 
     // ── Maintenance & Post-Launch Support ──────────────────────
     {
-      keywords: ['maintenance', 'after launch', 'post launch', 'update', 'upgrade', 'ongoing', 'monthly', 'annual', 'warranty', 'guarantee', 'support after'],
+      keywords: ['maintenance', 'after launch', 'post launch', 'update', 'updates', 'upgrade', 'upgrades', 'ongoing', 'monthly', 'annual', 'warranty', 'guarantee', 'support after'],
       response: "Yes, we provide comprehensive post-launch support! Our maintenance packages include:\n• Bug fixes & software updates\n• Security patches & vulnerability monitoring\n• Feature additions & enhancements\n• Monthly performance reports\n• 24/7 emergency support (premium plans)\n• Annual system audits\n\nWe offer monthly and annual maintenance retainer plans. We don't just build and disappear — we're long-term technology partners."
     },
 
     // ── Pricing & Quotes ───────────────────────────────────────
     {
-      keywords: ['price', 'pricing', 'cost', 'how much', 'rate', 'fee', 'charge', 'invoice', 'quote', 'estimate', 'budget', 'affordable', 'cheap', 'expensive'],
+      keywords: ['price', 'prices', 'pricing', 'cost', 'costs', 'how much', 'rate', 'rates', 'fee', 'fees', 'charge', 'charges', 'invoice', 'invoices', 'quote', 'quotes', 'estimate', 'estimates', 'budget', 'budgets', 'affordable', 'cheap', 'expensive'],
       response: "All our projects are custom-built to your requirements, so pricing varies by scope. Here's a general guide:\n\n💻 Basic website: from KSh 25,000\n📱 Mobile app: from KSh 80,000\n🖥️ Custom platform/ERP: from KSh 150,000\n🔐 Security audit: from KSh 40,000\n🌐 Office networking: from KSh 30,000\n\nWe offer FREE initial consultations. Contact us at +254 790 901 285 or hello@chiefintechsolutions.co.ke for a detailed, no-obligation quote."
     },
 
     // ── Consultation & Getting Started ─────────────────────────
     {
-      keywords: ['consult', 'get started', 'start', 'begin', 'first step', 'onboard', 'sign up', 'hire', 'engage', 'work together'],
+      keywords: ['consult', 'consultation', 'consultations', 'get started', 'start', 'begin', 'first step', 'onboard', 'sign up', 'hire', 'engage', 'work together'],
       response: "Getting started is easy! Here's how:\n\n1. 📞 Call or WhatsApp us on +254 790 901 285\n2. 📧 Email hello@chiefintechsolutions.co.ke\n3. 📝 Fill the Contact Form on this page\n\nWe'll schedule a FREE discovery call where we listen to your goals, assess your needs, and put together a tailored proposal — usually within 24 hours. No commitment required."
     },
 
@@ -802,7 +802,7 @@ function initChatbot() {
 
     // ── Location & Office ──────────────────────────────────────
     {
-      keywords: ['location', 'office', 'address', 'where are you', 'nairobi', 'kenya', 'visit', 'physical', 'find you'],
+      keywords: ['location', 'locations', 'office', 'offices', 'address', 'where are you', 'nairobi', 'kenya', 'visit', 'physical', 'find you'],
       response: "We are based in Nairobi, Kenya — the technology hub of East Africa! 🇰🇪\n\nWe serve clients:\n• Across all Nairobi counties\n• Upcountry Kenya (Mombasa, Kisumu, Nakuru, Eldoret)\n• East Africa (Uganda, Tanzania, Rwanda)\n• Remote clients globally\n\nOn-site visits can be arranged for networking, hardware, and CCTV installations. Contact us to schedule a site visit!"
     },
 
@@ -826,7 +826,7 @@ function initChatbot() {
 
     // ── Domain & Web Hosting ───────────────────────────────────
     {
-      keywords: ['domain', 'hosting', 'web hosting', '.co.ke', '.com', 'dns', 'cpanel', 'ssl', 'https', 'website hosting'],
+      keywords: ['domain', 'domains', 'hosting', 'web hosting', '.co.ke', '.com', 'dns', 'cpanel', 'ssl', 'https', 'website hosting'],
       response: "We handle all web presence essentials:\n• Domain registration (.co.ke, .com, .org, .africa)\n• Shared, VPS, and dedicated web hosting\n• SSL certificate installation (HTTPS)\n• DNS management & configuration\n• cPanel & Plesk setup\n• Website speed optimization & CDN setup\n\nWe ensure your website is fast, secure, and always online."
     },
 
@@ -838,25 +838,25 @@ function initChatbot() {
 
     // ── Negative / Problem States ──────────────────────────────
     {
-      keywords: ['problem', 'issue', 'broken', 'not working', 'bug', 'error', 'crash', 'down', 'urgent', 'emergency'],
+      keywords: ['problem', 'problems', 'issue', 'issues', 'broken', 'not working', 'bug', 'bugs', 'error', 'errors', 'crash', 'crashes', 'down', 'urgent', 'emergency', 'emergencies'],
       response: "We're sorry to hear you're experiencing an issue! 🚨 For urgent technical matters, please contact our support team directly:\n\n📞 WhatsApp/Call: +254 790 901 285 (fastest response)\n📧 Email: hello@chiefintechsolutions.co.ke\n\nIf you are an existing client on a support contract, please use your dedicated support channel. Our team typically responds to urgent issues within 1–4 hours during business hours."
     },
 
     // ── Competitor Comparisons ─────────────────────────────────
     {
-      keywords: ['better than', 'compare', 'versus', 'vs', 'why choose', 'why you', 'what makes you different', 'unique', 'advantage'],
+      keywords: ['better than', 'compare', 'versus', 'vs', 'why choose', 'why you', 'what makes you different', 'unique', 'advantage', 'advantages'],
       response: "Great question! Here's what sets ChiefinTechSolutions apart:\n\n✅ End-to-end capability — software, networking, security & hardware under one roof\n✅ Kenya-first focus — we understand local business needs, regulations & M-Pesa ecosystem\n✅ Transparent pricing — no hidden costs, clear proposals\n✅ Long-term partnerships — we offer post-launch maintenance\n✅ Fast turnaround — we meet deadlines\n✅ Senior-level engineers — not junior freelancers\n✅ Free initial consultation — no commitment required"
     },
 
     // ── Testimonials / Reviews ─────────────────────────────────
     {
-      keywords: ['testimonial', 'review', 'feedback', 'satisfied', 'happy', 'client experience', 'success story', 'rating'],
+      keywords: ['testimonial', 'testimonials', 'review', 'reviews', 'feedback', 'satisfied', 'happy', 'client experience', 'success story', 'success stories', 'rating', 'ratings'],
       response: "Our clients across Nairobi and East Africa consistently praise us for:\n• Delivering projects on time and within budget\n• Excellent communication throughout the process\n• Building systems that actually solve their problems\n• Providing responsive after-sales support\n• Making complex technology easy to understand\n\nWe're proud to have helped businesses scale their operations through smart technology. Visit our website to read client testimonials!"
     },
 
     // ── Delivery / Process ─────────────────────────────────────
     {
-      keywords: ['process', 'how do you work', 'methodology', 'steps', 'delivery', 'approach', 'workflow', 'agile', 'scrum'],
+      keywords: ['process', 'how do you work', 'methodology', 'steps', 'delivery', 'approach', 'workflow', 'workflows', 'agile', 'scrum'],
       response: "We follow a proven 10-step delivery process:\n\n1️⃣ Discovery — understanding your goals\n2️⃣ Consultation — aligning on requirements\n3️⃣ Planning — detailed project roadmap\n4️⃣ Design — UI/UX wireframes & prototypes\n5️⃣ Development — iterative engineering\n6️⃣ Testing — QA, security & performance\n7️⃣ Deployment — live launch & configuration\n8️⃣ Training — onboarding your team\n9️⃣ Support — post-launch assistance\n10️⃣ Continuous Improvement — ongoing enhancements\n\nWe use Agile methodology with regular demos so you're always in the loop."
     },
 
