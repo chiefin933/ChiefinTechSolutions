@@ -156,7 +156,7 @@ p { color: var(--color-text-muted); line-height: 1.75; }
   padding: 0 var(--space-xl);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .container { padding: 0 var(--space-lg); }
 }
 
@@ -2168,7 +2168,7 @@ p { color: var(--color-text-muted); line-height: 1.75; }
   .quality-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   :root { --space-5xl: 5rem; --space-4xl: 4rem; }
 
   .nav-links { display: none; }
@@ -2225,8 +2225,13 @@ p { color: var(--color-text-muted); line-height: 1.75; }
 }
 
 @media (max-width: 480px) {
-  .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .industries-grid { grid-template-columns: 1fr; }
   .process-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .hero-cta .btn { width: 100%; text-align: center; justify-content: center; }
+  .hero-text h1 { font-size: 2.1rem; }
+  .section-header h2 { font-size: 1.8rem; }
 }
 
 /* ── Scrollbar ──────────────────────────────────────────────── */
@@ -2484,7 +2489,7 @@ p { color: var(--color-text-muted); line-height: 1.75; }
   margin-top: 4px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .service-showcase { grid-template-columns: 1fr; }
   .photo-banner { height: 340px; }
@@ -3049,4 +3054,140 @@ p { color: var(--color-text-muted); line-height: 1.75; }
     bottom: 84px;
   }
 }
+
+/* ════════════════════════════════════════════════════════════
+   COMPREHENSIVE RESPONSIVE OVERHAUL  v1.0.4
+   Targets: PC (>1024px) · Tablet (768–1024px) · Phone (<768px)
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Tablet — 768 px to 1024 px ─────────────────────────── */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Nav */
+  .nav-container { padding: 0 var(--space-lg); }
+
+  /* Hero */
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: var(--space-4xl) var(--space-xl);
+    gap: var(--space-2xl);
+  }
+  .hero-visual { display: none; }
+  .hero-cta  { justify-content: center; }
+  .hero-stats { justify-content: center; flex-wrap: wrap; gap: var(--space-lg); }
+  .hero-badge { margin-left: auto; margin-right: auto; }
+  .hero-text p { margin-left: auto; margin-right: auto; }
+  .hero-text h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+
+  /* Cards */
+  .service-card { padding: var(--space-xl); }
+  .why-card     { padding: var(--space-xl); }
+  .quality-card { padding: var(--space-xl); }
+  .process-step { padding: var(--space-xl); }
+
+  /* Grids */
+  .services-grid  { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .blog-grid      { grid-template-columns: repeat(2, 1fr); }
+  .quality-grid   { grid-template-columns: repeat(2, 1fr); }
+  .process-grid   { grid-template-columns: repeat(2, 1fr); }
+  .process-grid::before { display: none; }
+  .values-grid    { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid   { grid-template-columns: 1fr; }
+  .form-row       { grid-template-columns: 1fr; }
+  .footer-grid    { grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+  .footer-grid > :first-child { grid-column: 1 / -1; }
+
+  /* Chatbot window on tablet */
+  .chat-window {
+    width: 340px;
+    height: 500px;
+    right: 24px;
+    bottom: 90px;
+  }
+}
+
+/* ── Mobile — up to 767 px ──────────────────────────────── */
+@media (max-width: 767px) {
+  /* Reduce section vertical padding on small screens */
+  .section { padding: var(--space-4xl) 0; }
+
+  /* Make sure nothing bleeds outside viewport */
+  * { max-width: 100%; }
+  img, video { width: 100%; height: auto; }
+
+  /* Hero minimum height so it never feels cramped */
+  #hero { min-height: 100svh; }
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+  }
+  .hero-stat { min-width: 100px; }
+
+  /* Better touch targets for all links/buttons */
+  .nav-link,
+  .nav-mobile .nav-link { min-height: 44px; display: flex; align-items: center; }
+  .btn { min-height: 48px; padding: 14px 24px; }
+
+  /* Service cards full-width clean layout */
+  .service-card {
+    padding: var(--space-xl);
+    flex-direction: column;
+  }
+
+  /* Contact form fields bigger on mobile for touch */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+
+  /* Footer links legible spacing for touch */
+  .footer-links li a { padding: 6px 0; display: inline-block; }
+  .footer-social { gap: var(--space-md); }
+  .social-btn { width: 44px; height: 44px; }
+
+  /* Floating action buttons don't overlap chatbot bubble */
+  .floating-buttons { bottom: 80px; right: 16px; }
+}
+
+/* ── Tiny Phones — up to 380 px ─────────────────────────── */
+@media (max-width: 380px) {
+  :root {
+    --space-xl:  1.5rem;
+    --space-2xl: 2rem;
+    --space-3xl: 2.5rem;
+  }
+
+  .hero-text h1 { font-size: 1.85rem; }
+  .section-header h2 { font-size: 1.55rem; }
+
+  /* Stack CTA buttons vertically */
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta .btn { width: 100%; text-align: center; justify-content: center; }
+
+  /* Tighter nav logo on tiny screens */
+  .nav-logo { font-size: 1.1rem; }
+  .nav-logo .logo-icon { width: 32px; height: 32px; }
+
+  /* Chatbot full screen on tiny devices */
+  .chat-window {
+    width: calc(100vw - 16px);
+    height: calc(100svh - 120px);
+    right: 8px;
+    bottom: 80px;
+    border-radius: var(--radius-lg);
+  }
+
+  /* Industry cards single column */
+  .industries-grid { grid-template-columns: 1fr; }
+
+  /* Reduce card padding */
+  .service-card,
+  .quality-card,
+  .process-step,
+  .why-card { padding: var(--space-lg); }
+}
+
 
