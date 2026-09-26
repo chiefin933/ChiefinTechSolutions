@@ -1,6 +1,6 @@
 /**
  * ChiefinTechSolutions — Main JavaScript
- * Handles: loading, navigation, dark mode, scroll effects,
+ * Handles: navigation, dark mode, scroll effects,
  * FAQ accordion, form validation, particles, search overlay,
  * tab switching, stagger animations, ripple effects.
  */
@@ -10,27 +10,6 @@
 /* ── Utility ─────────────────────────────────────────────────── */
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
-
-/* ── Loading Screen ──────────────────────────────────────────── */
-function initLoader() {
-  const screen = $('#loading-screen');
-  if (!screen) return;
-
-  const hide = () => {
-    screen.classList.add('hidden');
-    document.body.style.overflow = '';
-  };
-
-  document.body.style.overflow = 'hidden';
-
-  // Hide after animation completes (1.8s) + small buffer
-  setTimeout(hide, 2000);
-
-  // Fallback: hide immediately if page already loaded fast
-  if (document.readyState === 'complete') {
-    setTimeout(hide, 500);
-  }
-}
 
 /* ── Theme (Dark / Light) ────────────────────────────────────── */
 function initTheme() {
@@ -291,55 +270,26 @@ function initContactForm() {
 
     if (!valid) return;
 
-    const btn = $('#form-submit');
-    const success = $('#form-success');
+    const service = fields.service.el.selectedOptions[0].textContent;
+    const subject = `Project enquiry: ${service}`;
+    const body = [
+      `Name: ${fields.name.el.value.trim()}`,
+      `Reply email: ${fields.email.el.value.trim()}`,
+      `Phone: ${$('#contact-phone').value.trim()}`,
+      `Company: ${$('#contact-company').value.trim()}`,
+      `Service: ${service}`,
+      '',
+      fields.message.el.value.trim(),
+    ].join('\n');
 
-    if (btn) {
-      btn.disabled = true;
-      btn.textContent = 'Sending…';
+    // Open a draft; only the visitor's email app can send it.
+    window.location.href = `${form.getAttribute('action')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const notice = $('#form-handoff');
+    if (notice) {
+      notice.hidden = false;
+      notice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-
-    // Simulate form submission (replace with real endpoint)
-    setTimeout(() => {
-      form.reset();
-      if (success) {
-        success.style.display = 'block';
-        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-      if (btn) {
-        btn.disabled = false;
-        btn.innerHTML = `
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          Send Message`;
-      }
-    }, 1200);
-  });
-}
-
-/* ── Newsletter Form ─────────────────────────────────────────── */
-function initNewsletter() {
-  const form = $('#newsletter-form');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const input = form.querySelector('.newsletter-input');
-    if (!input) return;
-
-    const email = input.value.trim();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      input.style.borderColor = '#ef4444';
-      return;
-    }
-
-    const btn = form.querySelector('.newsletter-btn');
-    if (btn) {
-      btn.textContent = '✓ Subscribed!';
-      btn.disabled = true;
-      btn.style.background = '#10b981';
-    }
-    input.value = '';
-    input.style.borderColor = '';
+    // Keep the fields intact in case no email app is configured.
   });
 }
 
@@ -926,7 +876,6 @@ function initChatbot() {
 
 /* ── Initialize All ──────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
-  initLoader();
   initTheme();
   initNav();
   initReveal();
@@ -936,7 +885,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initParticles();
   initContactForm();
-  initNewsletter();
   initSearch();
   initRipple();
   initSmoothScroll();
@@ -947,4 +895,3 @@ document.addEventListener('DOMContentLoaded', () => {
   initLazyImages();
   initChatbot();
 });
-
